@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Звіт пастора — політика конфіденційності</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    :root {
+      --paper: #f4f1ea;
+      --ink: #1b1a17;
+      --muted: #6b665c;
+      --line: #dcd6c8;
+      --accent: #1f5c4a;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #161513;
+        --ink: #ece8df;
+        --muted: #a39d90;
+        --line: #34312b;
+        --accent: #7cc3a8;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    h1 {
+      margin: 8px 0 4px;
+      font-size: clamp(32px, 7vw, 48px);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+    }
+    h2 {
+      margin: 40px 0 8px;
+      padding-top: 20px;
+      border-top: 1px solid var(--ink);
+      font-size: 20px;
+      letter-spacing: -0.01em;
+    }
+    p, li { color: var(--ink); }
+    .muted { color: var(--muted); }
+    ul { padding-left: 20px; }
+    li { margin: 4px 0; }
+    a { color: var(--accent); }
+    nav a { margin-right: 16px; font-weight: 700; }
+    section + section { margin-top: 72px; }
+  </style>
+</head>
+<body>
+<main>
+  <nav><a href="#uk">Українською</a><a href="#en">English</a></nav>
+
+  <section id="uk" lang="uk">
+    <div class="eyebrow" style="margin-top:32px">Звіт пастора</div>
+    <h1>Політика конфіденційності</h1>
+    <p class="muted">Чинна з 17 листопада 2026 року</p>
+
+    <p>Застосунок «Звіт пастора» допомагає пасторам вести облік годин служіння і формувати щомісячний звіт. Його розробила й підтримує Центральна конференція Церкви адвентистів сьомого дня (далі — «Конференція»). Цей документ пояснює, які дані обробляє застосунок, навіщо і хто має до них доступ.</p>
+
+    <h2>Робота без входу</h2>
+    <p>Застосунком можна користуватися без входу в акаунт. У цьому разі всі записи, налаштування і графи звіту зберігаються лише на вашому пристрої і нікуди не передаються. Видалення застосунку видаляє ці дані.</p>
+
+    <h2>Які дані ми обробляємо після входу</h2>
+    <p>Вхід доступний працівникам Конференції через акаунт Google. Після входу на сервер передаються:</p>
+    <ul>
+      <li><b>Дані акаунта:</b> адреса електронної пошти та ідентифікатор, які надає Google. Пароль від Google застосунок не отримує.</li>
+      <li><b>Профіль:</b> прізвище, ім'я та по батькові для звіту, роль і статус доступу.</li>
+      <li><b>Заявка на підключення</b>, якщо ваша адреса не належить до доменів Конференції: ім'я, громада і коментар.</li>
+      <li><b>Записи годин служіння:</b> дата, час початку і завершення, категорія, населений пункт і пояснення.</li>
+      <li><b>Календарі:</b> назва, колір і секретна адреса календаря у форматі iCal, яку ви додаєте самі.</li>
+    </ul>
+    <p>Застосунок не збирає геолокацію, контакти, фото, рекламні ідентифікатори і не використовує аналітику чи рекламу.</p>
+
+    <h2>Навіщо</h2>
+    <ul>
+      <li>синхронізувати записи між вашими пристроями;</li>
+      <li>формувати щомісячний звіт пастора;</li>
+      <li>показувати події календарів Конференції і ваших власних календарів;</li>
+      <li>керувати доступом: підтверджувати заявки і призначати календарі.</li>
+    </ul>
+
+    <h2>Де зберігаються дані</h2>
+    <p>Дані зберігаються у базі даних сервісу Supabase у дата-центрі у Франкфурті (Німеччина, ЄС). З'єднання з сервером шифрується. Кожен користувач бачить лише власні записи — це забезпечують правила доступу на рівні бази даних.</p>
+    <p>Події календарів сервер завантажує з Google Календаря за вказаною адресою в момент перегляду і не зберігає їх, окрім короткочасного кешу до 5 хвилин. Секретні адреси календарів не передаються іншим користувачам.</p>
+
+    <h2>Хто має доступ</h2>
+    <ul>
+      <li><b>Ви</b> — до всіх своїх даних.</li>
+      <li><b>Адміністратори застосунку в Конференції</b> — до списку користувачів (ПІБ, пошта, статус, роль), заявок на підключення і налаштувань доступу до календарів. Записи годин інших користувачів у застосунку адміністраторам не показуються.</li>
+      <li><b>Технічні адміністратори бази даних</b> мають технічну можливість доступу до всіх даних і використовують її лише для обслуговування сервісу.</li>
+      <li><b>Постачальники інфраструктури:</b> Supabase (зберігання даних і вхід), Google (вхід через акаунт Google і календарі).</li>
+    </ul>
+    <p>Ми не продаємо і не передаємо ваші дані третім особам для реклами чи інших цілей.</p>
+
+    <h2>Як довго</h2>
+    <p>Дані зберігаються, доки існує ваш акаунт. Видалені записи позначаються як видалені, щоб зміна дійшла до всіх ваших пристроїв.</p>
+
+    <h2>Ваші права</h2>
+    <p>Ви можете попросити переглянути, виправити або повністю видалити ваші дані та акаунт. Для цього напишіть на адресу нижче — ми видалимо дані протягом 30 днів.</p>
+
+    <h2>Діти</h2>
+    <p>Застосунок призначений для служителів Церкви і не призначений для дітей.</p>
+
+    <h2>Зміни</h2>
+    <p>Про суттєві зміни цієї політики ми повідомимо в застосунку або на цій сторінці.</p>
+
+    <h2>Контакти</h2>
+    <p>Центральна конференція Церкви адвентистів сьомого дня<br />
+    Електронна пошта: <a href="mailto:o.lytvynenko@adventist.in.ua">o.lytvynenko@adventist.in.ua</a></p>
+  </section>
+
+  <section id="en" lang="en">
+    <div class="eyebrow">Zvit Pastora</div>
+    <h1>Privacy Policy</h1>
+    <p class="muted">Effective November 17, 2026</p>
+
+    <p>Zvit Pastora («Pastor's Report») helps pastors log ministry hours and prepare the monthly report. It is developed and maintained by the Central Conference of the Seventh-day Adventist Church (the «Conference»). This policy explains what data the app processes, why, and who can access it.</p>
+
+    <h2>Using the app without signing in</h2>
+    <p>The app works without an account. In that case all entries, settings and report columns stay on your device and are never sent anywhere. Deleting the app deletes this data.</p>
+
+    <h2>Data we process after you sign in</h2>
+    <p>Sign-in is available to Conference staff with a Google account. After you sign in, the following is sent to our server:</p>
+    <ul>
+      <li><b>Account data:</b> email address and identifier provided by Google. The app never receives your Google password.</li>
+      <li><b>Profile:</b> full name for the report, role and access status.</li>
+      <li><b>Access request</b>, if your address is not on a Conference domain: name, congregation and comment.</li>
+      <li><b>Ministry hour entries:</b> date, start and end time, category, place and note.</li>
+      <li><b>Calendars:</b> name, colour and the secret iCal address you add yourself.</li>
+    </ul>
+    <p>The app does not collect location, contacts, photos or advertising identifiers, and contains no analytics or ads.</p>
+
+    <h2>Why</h2>
+    <ul>
+      <li>to sync your entries between your devices;</li>
+      <li>to produce the monthly pastor's report;</li>
+      <li>to show events from Conference calendars and your own calendars;</li>
+      <li>to manage access: approving requests and assigning calendars.</li>
+    </ul>
+
+    <h2>Where data is stored</h2>
+    <p>Data is stored in a Supabase database in Frankfurt (Germany, EU). Connections to the server are encrypted. Database access rules ensure each user can only read their own entries.</p>
+    <p>Calendar events are fetched from Google Calendar when you view them and are not stored, apart from a cache of up to 5 minutes. Secret calendar addresses are never shown to other users.</p>
+
+    <h2>Who has access</h2>
+    <ul>
+      <li><b>You</b> — to all of your data.</li>
+      <li><b>App administrators at the Conference</b> — to the user list (name, email, status, role), access requests and calendar access settings. Other users' hour entries are not shown to administrators in the app.</li>
+      <li><b>Database administrators</b> have technical access to all data and use it only to operate the service.</li>
+      <li><b>Infrastructure providers:</b> Supabase (storage and sign-in) and Google (Google sign-in and calendars).</li>
+    </ul>
+    <p>We do not sell your data or share it with third parties for advertising or any other purpose.</p>
+
+    <h2>Retention</h2>
+    <p>Data is kept for as long as your account exists. Deleted entries are marked as deleted so the change reaches all of your devices.</p>
+
+    <h2>Your rights</h2>
+    <p>You can ask us to access, correct or completely delete your data and account by writing to the address below. We will delete it within 30 days.</p>
+
+    <h2>Children</h2>
+    <p>The app is intended for church ministers and is not directed at children.</p>
+
+    <h2>Changes</h2>
+    <p>We will announce material changes to this policy in the app or on this page.</p>
+
+    <h2>Contact</h2>
+    <p>Central Conference of the Seventh-day Adventist Church<br />
+    Email: <a href="mailto:o.lytvynenko@adventist.in.ua">o.lytvynenko@adventist.in.ua</a></p>
+  </section>
+</main>
+</body>
+</html>
