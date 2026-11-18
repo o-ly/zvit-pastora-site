@@ -2,9 +2,218 @@
 <html lang="uk">
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="refresh" content="0; url=privacy.html" />
-  <title>Звіт пастора</title>
-  <link rel="canonical" href="privacy.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Звіт пастора — завантажити</title>
+  <meta name="description" content="Облік годин служіння і щомісячний звіт пастора. Завантажити для Android, Windows і Mac." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    :root {
+      --paper: #f4f1ea;
+      --card: #fbfaf6;
+      --ink: #1b1a17;
+      --muted: #6b665c;
+      --line: #dcd6c8;
+      --accent: #1f5c4a;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #161513;
+        --card: #1e1c19;
+        --ink: #ece8df;
+        --muted: #a39d90;
+        --line: #34312b;
+        --accent: #7cc3a8;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 20px 72px;
+    }
+    .head {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+    .head img {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+    }
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    h1 {
+      margin: 2px 0 0;
+      font-size: clamp(36px, 8vw, 56px);
+      line-height: 1;
+      letter-spacing: -0.035em;
+    }
+    .lead {
+      max-width: 560px;
+      margin: 24px 0 36px;
+      font-size: 18px;
+    }
+    .platforms {
+      border-top: 1px solid var(--ink);
+    }
+    .platform {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: start;
+      gap: 8px 20px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .platform h2 {
+      margin: 0;
+      font-size: 22px;
+      letter-spacing: -0.01em;
+    }
+    .platform .size {
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .platform ol {
+      grid-column: 1 / -1;
+      margin: 4px 0 0;
+      padding-left: 20px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .platform li { margin: 3px 0; }
+    .platform b { color: var(--ink); }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      height: 44px;
+      padding: 0 22px;
+      border-radius: 22px;
+      background: var(--ink);
+      color: var(--paper);
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .btn.off {
+      background: transparent;
+      color: var(--muted);
+      border: 1px solid var(--line);
+    }
+    code {
+      font: 13px ui-monospace, SFMono-Regular, Menlo, monospace;
+      padding: 2px 6px;
+      border-radius: 6px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      color: var(--ink);
+      word-break: break-all;
+    }
+    .note {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--ink);
+    }
+    .note h2 {
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+    .note p { margin: 8px 0; }
+    footer {
+      margin-top: 48px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    a { color: var(--accent); }
+    @media (max-width: 520px) {
+      .platform { grid-template-columns: 1fr; }
+      .btn { justify-content: center; }
+    }
+  </style>
 </head>
-<body><a href="privacy.html">Політика конфіденційності</a></body>
+<body>
+<main>
+  <div class="head">
+    <img src="icon.png" alt="" />
+    <div>
+      <div class="eyebrow">Версія 0.2.0</div>
+      <h1>Звіт пастора</h1>
+    </div>
+  </div>
+
+  <p class="lead">Облік годин служіння на шкалі дня і готовий щомісячний звіт пастора в Excel — у форматі бланка конференції.</p>
+
+  <div class="platforms">
+    <section class="platform">
+      <div>
+        <h2>Android</h2>
+        <span class="size">APK · 4 МБ · Android 7 і новіші</span>
+      </div>
+      <a class="btn" href="https://github.com/o-ly/zvit-pastora-site/releases/latest/download/ZvitPastora-Android.apk">Завантажити</a>
+      <ol>
+        <li>Завантажте файл на телефоні й відкрийте його.</li>
+        <li>Якщо телефон попросить, дозвольте браузеру <b>встановлювати невідомі програми</b>.</li>
+        <li>Натисніть <b>Встановити</b>.</li>
+      </ol>
+    </section>
+
+    <section class="platform">
+      <div>
+        <h2>Windows</h2>
+        <span class="size">Інсталятор · 2 МБ · Windows 10 і 11</span>
+      </div>
+      <a class="btn" href="https://github.com/o-ly/zvit-pastora-site/releases/latest/download/ZvitPastora-Windows-setup.exe">Завантажити</a>
+      <ol>
+        <li>Запустіть завантажений файл.</li>
+        <li>Якщо Windows покаже «Windows захистив ваш ПК», натисніть <b>Докладніше</b> → <b>Виконати в будь-якому разі</b>.</li>
+        <li>Після встановлення «Звіт пастора» з'явиться в меню «Пуск».</li>
+      </ol>
+    </section>
+
+    <section class="platform">
+      <div>
+        <h2>Mac</h2>
+        <span class="size">DMG · 8 МБ · процесори Intel і Apple</span>
+      </div>
+      <a class="btn" href="https://github.com/o-ly/zvit-pastora-site/releases/latest/download/ZvitPastora-Mac.dmg">Завантажити</a>
+      <ol>
+        <li>Відкрийте файл і перетягніть «Zvit Pastora» у папку <b>Програми</b>.</li>
+        <li>Перший запуск: якщо Mac не дає відкрити, зайдіть у <b>Системні параметри</b> → <b>Приватність і безпека</b> → внизу <b>Усе одно відкрити</b>.</li>
+        <li>Якщо Mac пише, що програма «пошкоджена», виконайте в Терміналі <code>xattr -cr "/Applications/Zvit Pastora.app"</code> і запустіть знову.</li>
+      </ol>
+    </section>
+
+    <section class="platform">
+      <div>
+        <h2>iPhone та iPad</h2>
+        <span class="size">App Store</span>
+      </div>
+      <span class="btn off">Незабаром</span>
+    </section>
+  </div>
+
+  <div class="note">
+    <h2>Синхронізація між пристроями</h2>
+    <p>Застосунок працює й без входу — записи зберігаються на пристрої. Щоб записи з'являлися на телефоні й комп'ютері, відкрийте <b>Налаштування</b> → <b>Увійти через Google</b>.</p>
+    <p>Адреси <b>@adventist.in.ua</b> та <b>@adventist.ua</b> підключаються одразу. Якщо у вас інша адреса, після входу подайте заявку — адміністратор її підтвердить.</p>
+  </div>
+
+  <footer>
+    Центральна конференція Церкви адвентистів сьомого дня ·
+    <a href="privacy.html">Політика конфіденційності</a> ·
+    <a href="mailto:o.lytvynenko@adventist.in.ua">Підтримка</a>
+  </footer>
+</main>
+</body>
 </html>
